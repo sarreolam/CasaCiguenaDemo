@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beachfront Rental - Experience the Coast</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b9dee",
+                        "accent-warm": "#FFD8A8",
+                        "sun-kissed": "#FFF3BF",
+                        "background-light": "#fefcfb",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .organic-bg {
+            background: linear-gradient(135deg, #fefcfb 0%, #FFF3BF 100%);
+        }
+        .dark .organic-bg {
+            background: #101a22;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111518] dark:text-white transition-colors duration-300">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f0f3f4] dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">waves</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Beachfront Rental</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#experiences">Experiences</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#property">The House</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#map">Location</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#reviews">Journal</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-6 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                    Book Your Stay
+                </button>
+</div>
+</div>
+</header>
+<main class="flex flex-col">
+<!-- Hero Section -->
+<section class="relative px-6 py-8 md:py-12">
+<div class="max-w-7xl mx-auto">
+<div class="relative min-h-[600px] flex items-center justify-center overflow-hidden rounded-3xl bg-cover bg-center" data-alt="Golden hour beach sunset with soft waves" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../resources/sunset4.jpg");'>
+<div class="relative z-10 text-center px-4 max-w-3xl">
+<span class="inline-block px-4 py-1.5 mb-6 bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full text-xs font-bold uppercase tracking-widest">Luxury Coastal Living</span>
+<h1 class="text-white text-5xl md:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
+                            Wake up to the rhythm of the waves.
+                        </h1>
+<p class="text-white/90 text-lg md:text-xl font-medium mb-10 max-w-2xl mx-auto">
+                            Experience a curated beachfront lifestyle designed for those who seek the sun and the soul of the ocean.
+                        </p>
+<div class="flex flex-wrap gap-4 justify-center">
+<button class="bg-white text-[#111518] px-8 py-4 rounded-xl font-bold hover:bg-sun-kissed transition-colors">
+                                Explore Experiences
+                            </button>
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all">
+                                Check Dates
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experiences Header -->
+<section class="pt-16 pb-8" id="experiences">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="max-w-xl">
+<h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-2">Local Vibe</h3>
+<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">The Beachfront Experience</h2>
+</div>
+<p class="text-[#617989] dark:text-gray-400 font-medium max-w-xs">
+                        From early morning swells to golden hour rituals, your stay is defined by the moments between the walls.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Carousel / Staggered Grid -->
+<section class="pb-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex gap-8 overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Experience 1 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start group">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden mb-6 shadow-xl relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Surfer walking towards early morning waves" style='background-image: url("../resources/panorama1.jpg");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-sun-kissed text-xs font-bold uppercase tracking-widest">Adventure</span>
+<h4 class="text-white text-2xl font-bold mt-1">Catch the Early Swell</h4>
+</div>
+</div>
+<p class="text-[#617989] dark:text-gray-400 leading-relaxed">
+                            The best local surf breaks are just a short walk from your front door. Gear available upon request.
+                        </p>
+</div>
+<!-- Experience 2 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start group mt-12">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden mb-6 shadow-xl relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Gourmet seafood dish served on a patio" style='background-image: url("../resources/kitchen2.jpg");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-sun-kissed text-xs font-bold uppercase tracking-widest">Cuisine</span>
+<h4 class="text-white text-2xl font-bold mt-1">Taste the Coast</h4>
+</div>
+</div>
+<p class="text-[#617989] dark:text-gray-400 leading-relaxed">
+                            Explore authentic coastal flavors and the freshest seafood caught daily by local fisherman.
+                        </p>
+</div>
+<!-- Experience 3 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start group">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden mb-6 shadow-xl relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Outdoor deck with firepit at sunset" style='background-image: url("../resources/fuego1.jpg");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-sun-kissed text-xs font-bold uppercase tracking-widest">Relaxation</span>
+<h4 class="text-white text-2xl font-bold mt-1">Golden Hour Rituals</h4>
+</div>
+</div>
+<p class="text-[#617989] dark:text-gray-400 leading-relaxed">
+                            Breathtaking panoramic views from your private deck. The perfect spot for sundowners and stargazing.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Property Detail Section (Organic/Overlapping) -->
+<section class="py-24 organic-bg dark:bg-background-dark/50 overflow-hidden" id="property">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="w-full aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10" data-alt="Luxury living room with ocean view">
+<img alt="Interior view" class="w-full h-full object-cover" src="../resources/salaestar2.jpg"/>
+</div>
+<!-- Overlapping Decorative Element -->
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-accent-warm/40 dark:bg-primary/20 rounded-full blur-3xl -z-0"></div>
+<div class="absolute -top-10 -left-10 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-xl z-20 hidden lg:block">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-sun-kissed flex items-center justify-center text-orange-600">
+<span class="material-symbols-outlined">bathtub</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-[#617989]">Relaxation</p>
+<p class="text-sm font-bold">Outdoor Rain Shower</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col gap-6">
+<h3 class="text-primary font-bold text-sm uppercase tracking-widest">The Property</h3>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Your Coastal Home Base</h2>
+<p class="text-lg text-[#617989] dark:text-gray-300 leading-relaxed">
+                        A blend of luxury and comfort designed for the ultimate getaway. Our home features floor-to-ceiling ocean views, an expansive beachfront deck, and curated interiors that reflect the colors of the shore.
+                    </p>
+<div class="grid grid-cols-2 gap-6 my-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">bed</span>
+<span class="font-semibold">4 Master Suites</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">deck</span>
+<span class="font-semibold">Private Access</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">wifi</span>
+<span class="font-semibold">High-Speed Fiber</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">coffee_maker</span>
+<span class="font-semibold">Pro Kitchen</span>
+</div>
+</div>
+<button class="bg-primary text-white px-10 py-4 rounded-xl font-bold w-fit shadow-lg shadow-primary/30 hover:-translate-y-1 transition-all">
+                        View Property Details
+                    </button>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="py-24" id="map">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-white dark:bg-gray-800 rounded-[2.5rem] shadow-xl overflow-hidden flex flex-col md:flex-row">
+<div class="w-full md:w-1/3 p-12 flex flex-col justify-center gap-6">
+<h2 class="text-3xl font-extrabold tracking-tight">Steps from the Sand</h2>
+<p class="text-[#617989] dark:text-gray-400">
+                            Location is everything. Our property is strategically located so you're never more than a 2-minute stroll from the water's edge.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="size-2 rounded-full bg-primary"></span>
+<span class="font-medium text-sm">2 min Walk to Main Beach</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="size-2 rounded-full bg-accent-warm"></span>
+<span class="font-medium text-sm">5 min Walk to Surf Shop</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="size-2 rounded-full bg-primary"></span>
+<span class="font-medium text-sm">10 min Walk to Harbor Dining</span>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-2/3 h-[450px] bg-[#f0f3f4] relative overflow-hidden" data-location="Malibu, California" style="">
+<!-- Simulated Map -->
+<div class="absolute inset-0 bg-[#e5e7eb] dark:bg-gray-700">
+<!-- Artistic Map Mockup -->
+<div class="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/graphy.png')]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="animate-ping absolute inset-0 rounded-full bg-primary/40 size-12"></div>
+<div class="relative size-12 bg-primary rounded-full border-4 border-white flex items-center justify-center text-white shadow-xl">
+<span class="material-symbols-outlined">home</span>
+</div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 px-3 py-1 rounded-lg shadow-lg whitespace-nowrap text-xs font-bold uppercase tracking-wider">
+                                        Beachfront Rental
+                                    </div>
+</div>
+</div>
+<!-- Map UI elements -->
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur p-2 rounded-xl shadow-lg flex flex-col gap-1">
+<button class="size-8 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">+</button>
+<div class="h-px bg-gray-200 dark:bg-gray-600"></div>
+<button class="size-8 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">-</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Journal -->
+<section class="pb-24 overflow-hidden" id="reviews">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-accent-warm text-6xl mb-6">format_quote</span>
+<h2 class="text-3xl md:text-4xl font-extrabold italic font-serif leading-relaxed mb-10">
+                    "The rhythm of the ocean stayed with us long after we left. It's not just a rental; it's a feeling of finally being home."
+                </h2>
+<div class="flex items-center justify-center gap-4">
+<div class="size-14 rounded-full bg-cover bg-center border-4 border-white shadow-lg" data-alt="Happy guest portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCClAuDo7hEGdya0WFs_OSEG3r1U2hSi_RbWNWGNtxivC7XtNbvBz2KAQSuAl0gP1UsRMsSe97eyvHHbbzf8WlQh5PBeOYAS8Wyxr_A2j1PP23iUZPry4c5PnQ_GcMCK11ykXcbfC9pBuu2Sg3wFCKCaYQZIS1hMIdNHSt3j3nByGNebP-lMjiADXUrHtbUB7_1ofmoIWNnbNfPgS0WbROOie02pq5xvts8EUySMESg_Ral34d2Z7FYGYj9eKWAtkCfYV_ivEMRygs");'></div>
+<div class="text-left">
+<p class="font-bold">Elena Rodriguez</p>
+<p class="text-sm text-[#617989]">Visited in October 2023</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f0f3f4] dark:border-gray-800 py-16">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-6 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[16px]">waves</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Beachfront Rental</h2>
+</div>
+<p class="text-sm text-[#617989] leading-relaxed mb-6">
+                        Crafting unforgettable coastal memories since 2015. Your gateway to the ocean's soul.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-[#f0f3f4] dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="size-10 rounded-full bg-[#f0f3f4] dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">camera</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4 text-sm text-[#617989] dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">House Rules</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Amenities List</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Area Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Booking FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Stay Connected</h4>
+<ul class="space-y-4 text-sm text-[#617989] dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram Journal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Newsletter</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Newsletter</h4>
+<p class="text-sm text-[#617989] mb-4">Get seasonal guides and exclusive availability alerts.</p>
+<div class="flex gap-2">
+<input class="bg-[#f0f3f4] dark:bg-gray-800 border-none rounded-xl px-4 py-2 text-sm w-full focus:ring-2 focus:ring-primary" placeholder="Your email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-xl">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-[#f0f3f4] dark:border-gray-800 text-center text-xs text-[#617989]">
+                © 2024 Beachfront Rental Co. All rights reserved. Designed for the adventurous spirit.
+            </div>
+</footer>
+</main>
+<!-- Floating Availability Bar -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl">
+<div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-4 flex flex-col md:flex-row items-center gap-4">
+<div class="flex-1 grid grid-cols-2 gap-4 w-full">
+<div class="flex flex-col">
+<label class="text-[10px] font-bold uppercase tracking-wider text-[#617989] mb-1">Check In
+<input class="bg-transparent border-none p-0 text-sm font-bold focus:ring-0" type="date"/>
+</label></div>
+<div class="flex flex-col border-l border-[#f0f3f4] dark:border-gray-700 pl-4">
+<label class="text-[10px] font-bold uppercase tracking-wider text-[#617989] mb-1">Guests
+<select class="bg-transparent border-none p-0 text-sm font-bold focus:ring-0">
+<option>2 Adults</option>
+<option>4 Adults</option>
+<option>Family (2+2)</option>
+</select>
+</label></div>
+</div>
+<button class="bg-primary text-white px-8 py-3 rounded-xl font-bold text-sm w-full md:w-auto hover:bg-primary/90 transition-colors">
+                Book Now
+            </button>
+</div>
+</div>
+</body></html>
