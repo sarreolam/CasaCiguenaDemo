@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casa Cigüeña — Luxury Oceanfront Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#197fe6",
+                        "background-light": "#EFECE4",
+                        "background-dark": "#111921",
+                        "accent-green": "#D1E9E2",
+                        "accent-blue": "#D1E3F0",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#2D2926]">
+<!-- 1. Sticky Nav -->
+<nav class="sticky top-0 z-50 w-full bg-background-light/90 backdrop-blur-md border-b border-[#D1CEC3] px-4 py-3 md:px-8 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#2D2926]">menu</span>
+<span class="serif-text text-xl font-bold tracking-tight">Casa Cigüeña</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block text-sm font-medium uppercase tracking-widest text-[#2D2926] hover:text-primary transition-colors">The Villa</button>
+<button class="bg-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-primary/90 transition-all shadow-sm">Check Availability</button>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<header class="relative w-full min-h-[90vh] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Aerial view of luxury white oceanfront villa with infinity pool" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUCJCNNLs0IucM8lzjldMiM2v51llVdOUOBctHooQoZMvRxy4M8DT7UOn6_BTaDAmVRiO5cDo8rwaADa9WO56jmExdbtEqtbscLRw5dM4WSPVKQ5feAlQA28zfyLMdSmk3b0bu3WUMLeNlRSgd6F5PTFvmBImQMZz0LLq__iJPD1-UOlHkCSilgBSPOtrqmbK3WGFWW15Brnxuer35qCzpCzXBooRwJqgpFUWsCZZm83mr42cYJY7AyOvMrlg4uUKjfQ7PGLdLNdE');"></div>
+</div>
+<div class="relative z-10 px-6 pb-16 max-w-5xl mx-auto w-full text-white">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">Completed 2025</span>
+<span class="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">Fully Staffed</span>
+<span class="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">Oceanfront</span>
+</div>
+<h1 class="serif-text text-4xl md:text-7xl mb-4 leading-tight">Casa Cigüeña — Your private oceanfront sanctuary in Marina Chacala</h1>
+<p class="text-lg md:text-xl font-light opacity-90 mb-8 max-w-2xl">
+                7 bedrooms • Sleeps 14 • Daily chef + housekeeping • Uninterrupted sunsets over the Pacific horizon.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-[1.02] transition-transform">Check Availability</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/40 text-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white/20 transition-all">Explore the Villa</button>
+</div>
+</div>
+</header>
+<!-- 3. Quick Booking Card -->
+<div class="max-w-7xl mx-auto px-6 -mt-8 relative z-20">
+<div class="bg-white rounded-xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-[#D1CEC3]">
+<div class="space-y-1 text-center md:text-left">
+<p class="text-xs uppercase tracking-widest text-[#637588]">Starting from</p>
+<p class="text-3xl font-bold text-[#111418]">$3,200 <span class="text-base font-normal text-[#637588]">/ night</span></p>
+<p class="text-xs text-[#637588]">Minimum stay: 3 nights</p>
+</div>
+<div class="h-px w-full md:w-px md:h-12 bg-[#f0f2f4]"></div>
+<div class="flex-1 w-full md:w-auto">
+<p class="text-sm text-[#2D2926] text-center md:text-left mb-2 italic">“The most exclusive address in Nayarit.”</p>
+</div>
+<div class="flex flex-col items-center gap-2 w-full md:w-auto">
+<button class="w-full md:w-auto bg-[#111418] text-white px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-black transition-colors">Request to Book</button>
+<p class="text-[10px] text-[#637588] uppercase tracking-tighter">No payment today. We confirm availability by email.</p>
+</div>
+</div>
+</div>
+<!-- 4. The Villa Overview -->
+<section class="py-24 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h2 class="serif-text text-4xl md:text-5xl text-[#111418] leading-tight">Where the jungle meets the Pacific.</h2>
+<div class="space-y-4 text-[#4A4642] leading-relaxed text-lg">
+<p>Nestled in the gated enclave of Marina Chacala, Casa Cigüeña offers absolute privacy and architectural harmony. Every room is designed to frame the rhythmic movement of the ocean.</p>
+<p>Witness the spectacular whale season from your terrace between December and March, or enjoy a short 45-minute private transfer from PVR International Airport to your sanctuary.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-accent-green/30 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">visibility</span>
+<p class="text-sm font-bold uppercase tracking-widest">Privacy First</p>
+<p class="text-xs text-[#637588]">Gated community with 24/7 security.</p>
+</div>
+<div class="bg-accent-blue/30 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">sunny</span>
+<p class="text-sm font-bold uppercase tracking-widest">Golden Hour</p>
+<p class="text-xs text-[#637588]">West-facing for legendary sunsets.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden h-80 bg-slate-200" data-alt="Infinity pool overlooking the ocean at sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqvGDF6XtlUVnXHqogI-9nitlE6RgLQVKospUZj7WfrzdJMWFybh2o9YAtqtpgOmd3V5O8nfwtfaT7elAHbYo5okFNXHB9agaVSitgWiTclKA30UG1j-TLhnRT1tulLqhNl4BYB1xHXLW59AIsaYDwN8JNIMsvt068MsA5uLhE4cxmnIVPtCjjyjSmgmkVPRQP1m_BRhrYKMrMAqsuDciyN-wbUweRB8Kb85aFrrlabstTDGVgtmxkzFDPO9xCwYIPEdJ3cK2Ffi8'); background-size: cover;"></div>
+<div class="rounded-xl overflow-hidden h-80 mt-12 bg-slate-200" data-alt="Modern luxury bedroom with ocean view" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvw3WnBM9cbfehsUjL6mh5d9_LjV8oeVJFy8C4qS3LyJ_bbnYE_yLEeFrCNUQs2golIObu0mPj-8L3PeNqEBcb_Hu4Xtjl6VQp36Hxe3klI2MUZyxN71NjvULz1VRRoMq20eYXX9ZoRc_rP9lBmnJB7JIGPvmXRfY1-ferw-7gCmJpnunZ5VnX3gOxgO995dramFz9n54Rj2v-TXTlOob-ZysaHj6_aOSih2l9V2CpYRNEBni3y3HiOnDne9lp0lp746gBaIKOWD4'); background-size: cover;"></div>
+</div>
+</section>
+<!-- 5. Suites & Rooms -->
+<section class="bg-[#F9F8F4] py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="serif-text text-4xl mb-2">Suites &amp; Sanctuaries</h2>
+<p class="text-[#637588] uppercase tracking-widest text-xs">7 Private Bedrooms • All Ensuite</p>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full border border-[#D1CEC3] flex items-center justify-center hover:bg-white transition-colors"><span class="material-symbols-outlined text-sm">west</span></button>
+<button class="w-10 h-10 rounded-full border border-[#D1CEC3] flex items-center justify-center hover:bg-white transition-colors"><span class="material-symbols-outlined text-sm">east</span></button>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Room Card 1 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start bg-white rounded-xl overflow-hidden border border-[#D1CEC3]">
+<div class="h-64 bg-slate-300" data-alt="Master suite with ocean view and king bed" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpfifcTPdVjy2MTIs3aVTVXKz72Dq1txAVpwwhThnG5syPzoHnPIXYWb47SPoFlusySGOnA43I0jSh1RVmtqHrjzre3NNZ79Z6dwGMArUfdUse0k_yxHgRPoXhZojFfWbA_i5IY0H2QhEOvYV83mZi6_faqyCycy-LwFg517yLP4VxaPjS3b8tmQbgPWbmeX8isJ_4tmTSeFTowNw5I41sW9pV2e77AYsM5g2-1bcCu_JpRFbQ6hOA-kLHVN0jmrMhQHchWuhvVGA'); background-size: cover;"></div>
+<div class="p-6">
+<h3 class="serif-text text-2xl mb-1">Master Oceano</h3>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-4">King Bed • Ocean View</p>
+<p class="text-sm text-[#637588] mb-4">Private terrace, outdoor rain shower, and soaking tub with views of the bay.</p>
+<div class="flex items-center gap-2 text-[10px] uppercase font-bold text-[#2D2926]">
+<span class="material-symbols-outlined text-sm">bathtub</span> Double Vanity
+                            <span class="material-symbols-outlined text-sm">ac_unit</span> Climate Controlled
+                        </div>
+</div>
+</div>
+<!-- Room Card 2 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start bg-white rounded-xl overflow-hidden border border-[#D1CEC3]">
+<div class="h-64 bg-slate-300" data-alt="Luxury bedroom with two queen beds" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhL88fB7qpXhBG8tc5P8DY3eJ4yU9_CH47Y5nWpYqxl5uSEE87zOIhpXDtqhCwUBKwc9FP-PFbm5t-Tsj2xcvmdFmRowCXB3rSUIBCUxLjVwnnN0Fk2DXotZ4-QqxFZAxgZKxodpSMkcTXEk4b6Cq4_xEJGo9d_LksPSYvj0irZegApfi3WwU1EUvWIRckK2KRdDD65d8AF2AAgW_jd0lqpGO64uuc2R4R1txETgeP4ezFKggCSLprvBBUcUA9j7B-vxa0aiwh1kY'); background-size: cover;"></div>
+<div class="p-6">
+<h3 class="serif-text text-2xl mb-1">Jungle Suite</h3>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-4">Two Queens • Garden View</p>
+<p class="text-sm text-[#637588] mb-4">Immersed in tropical flora with a private meditation deck and ensuite bath.</p>
+<div class="flex items-center gap-2 text-[10px] uppercase font-bold text-[#2D2926]">
+<span class="material-symbols-outlined text-sm">shower</span> Rain Shower
+                            <span class="material-symbols-outlined text-sm">wifi</span> High Speed
+                        </div>
+</div>
+</div>
+<!-- Room Card 3 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start bg-white rounded-xl overflow-hidden border border-[#D1CEC3]">
+<div class="h-64 bg-slate-300" data-alt="Third luxury bedroom interior" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcAD6zDJI9mIFdA53_0pD9F0aDdsE6_3EFx7OT8osdnrwm5zZntVd0EvpXN4kpE_-ZQSLSeQ1cbGXKsJFo7e-76pvmj9HkGy8wUQmt4EJqDop7ifLeq0-19gDVDcMAkl2rRl4iHroBonQRJcs94snxk4ARXOjtw0FYty02O0YdDRzwFI_YS1DSAIvc1xrRTa6HJIfQH1ugTazk5yk_1A2QfrrdH45jJ-vfpoNNr0V8Eq4_rnrUwG6s9L6ZR9qlAhbYWfaDsVlWz0M'); background-size: cover;"></div>
+<div class="p-6">
+<h3 class="serif-text text-2xl mb-1">La Terraza</h3>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-4">King Bed • Pool Access</p>
+<p class="text-sm text-[#637588] mb-4">Steps from the infinity pool with floor-to-ceiling glass walls.</p>
+<div class="flex items-center gap-2 text-[10px] uppercase font-bold text-[#2D2926]">
+<span class="material-symbols-outlined text-sm">pool</span> Direct Access
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Amenities Grid -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<h2 class="serif-text text-4xl mb-12 text-center">Unparalleled Comforts</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8">
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">pool</span>
+<p class="text-sm font-bold uppercase tracking-widest">Infinity Pool</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">skillet</span>
+<p class="text-sm font-bold uppercase tracking-widest">Gourmet Kitchen</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">waves</span>
+<p class="text-sm font-bold uppercase tracking-widest">Beach Access</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">wifi</span>
+<p class="text-sm font-bold uppercase tracking-widest">Starlink Wi-Fi</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">dry_cleaning</span>
+<p class="text-sm font-bold uppercase tracking-widest">Daily Laundry</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">ac_unit</span>
+<p class="text-sm font-bold uppercase tracking-widest">Full A/C</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">local_parking</span>
+<p class="text-sm font-bold uppercase tracking-widest">Private Garage</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-3">
+<span class="material-symbols-outlined text-3xl font-light text-primary">movie</span>
+<p class="text-sm font-bold uppercase tracking-widest">Media Room</p>
+</div>
+</div>
+</section>
+<!-- 7. Experiences -->
+<section class="py-24 px-6 bg-accent-blue/20">
+<div class="max-w-7xl mx-auto">
+<h2 class="serif-text text-4xl mb-12">The Experience</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white p-8 rounded-xl border border-accent-blue/50 flex flex-col justify-between group hover:shadow-lg transition-all">
+<div>
+<h3 class="serif-text text-2xl mb-4">Chef &amp; Staff</h3>
+<p class="text-sm text-[#637588] leading-relaxed mb-6">Our dedicated team includes a daily chef for breakfast and lunch, full housekeeping, and a villa manager to curate your stay.</p>
+</div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Inclusive</span>
+</div>
+<div class="bg-white p-8 rounded-xl border border-accent-blue/50 flex flex-col justify-between group hover:shadow-lg transition-all">
+<div>
+<h3 class="serif-text text-2xl mb-4">Wellness</h3>
+<p class="text-sm text-[#637588] leading-relaxed mb-6">In-villa massages, private yoga sessions on the terrace, and meditation guides available upon request.</p>
+</div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Add-on service</span>
+</div>
+<div class="bg-white p-8 rounded-xl border border-accent-blue/50 flex flex-col justify-between group hover:shadow-lg transition-all">
+<div>
+<h3 class="serif-text text-2xl mb-4">Exploration</h3>
+<p class="text-sm text-[#637588] leading-relaxed mb-6">Golf cart rentals for cruising the Marina, private boat charters for whale watching, and guided jungle treks.</p>
+</div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Add-on service</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Availability & 9. Booking Form -->
+<section class="py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
+<div>
+<h2 class="serif-text text-4xl mb-8">Calendar</h2>
+<div class="bg-white border border-[#D1CEC3] rounded-xl p-8 shadow-sm">
+<div class="flex items-center justify-between mb-8">
+<button class="material-symbols-outlined">chevron_left</button>
+<span class="font-bold uppercase tracking-widest">November 2025</span>
+<button class="material-symbols-outlined">chevron_right</button>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-[10px] font-bold uppercase text-[#637588] mb-4">
+<span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<!-- Muted days from prev month -->
+<div class="h-10 flex items-center justify-center text-gray-300">26</div>
+<div class="h-10 flex items-center justify-center text-gray-300">27</div>
+<div class="h-10 flex items-center justify-center text-gray-300">28</div>
+<div class="h-10 flex items-center justify-center text-gray-300">29</div>
+<div class="h-10 flex items-center justify-center text-gray-300">30</div>
+<div class="h-10 flex items-center justify-center text-gray-300">31</div>
+<!-- Current month -->
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">1</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">2</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">3</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-primary text-white font-bold">4</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-primary text-white font-bold">5</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-primary text-white font-bold">6</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-primary text-white font-bold">7</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-slate-100 text-[#637588] line-through">8</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-slate-100 text-[#637588] line-through">9</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-slate-100 text-[#637588] line-through">10</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">11</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">12</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">13</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold">14</div>
+<div class="h-10 flex items-center justify-center rounded-md bg-accent-green/30 font-bold text-orange-500 border border-orange-200">15</div>
+</div>
+<div class="mt-8 flex gap-6 text-[10px] uppercase font-bold tracking-widest">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-accent-green/30"></div> Available</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-primary"></div> Selected</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-slate-100"></div> Booked</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm border border-orange-200"></div> Pending</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="serif-text text-4xl mb-8">Reserve</h2>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">Check-In</label>
+<input class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="Nov 04, 2025" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">Check-Out</label>
+<input class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="Nov 07, 2025" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">Guests</label>
+<select class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary">
+<option>12 Guests</option>
+<option>13 Guests</option>
+<option>14 Guests (Max)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">Name</label>
+<input class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="Your full name" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">Email</label>
+<input class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="email@example.com" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">WhatsApp</label>
+<input class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="+1..." type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold tracking-widest text-[#637588]">Special Requests</label>
+<textarea class="w-full bg-white border-[#D1CEC3] rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="Dietary requirements, celebrations, transportation..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-primary/90 shadow-md" type="button">Send Booking Request</button>
+</form>
+</div>
+</section>
+<!-- 10. Location Section -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-5 gap-12">
+<div class="lg:col-span-3 h-96 rounded-2xl overflow-hidden bg-slate-100 border border-[#D1CEC3]">
+<div class="w-full h-full grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Stylized map of Marina Chacala coast" data-location="Chacala, Nayarit, Mexico" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvyva7HDUZLEGEJr9GRLMOBgJZkQ9o2MgH6dO7Qq3OO8C7tBmbSt-rvy-GAEoxjzuN6MxOnxRYc4wvwzl8OxedeAaa-B6LmUTa-M_b8tgXFanrIiCmJc3DHDOO2ijO3ATMWxG79VhLo5vlsZY7Vlw5_a6Umj5Co0MbgeO21-tLL0-EJFAWk68n_WWdX70Zt84SgV7jo4RtuSboaa3c-HpzwgNPyAjWkzZjUj7G5eXjpvcRQ-4ws-K3cR3fwem6_VrYQ_KpttoorMM'); background-size: cover;"></div>
+</div>
+<div class="lg:col-span-2 space-y-8">
+<h2 class="serif-text text-4xl leading-tight">Marina Chacala Community</h2>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary">sailing</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest">Private Beach Club</p>
+<p class="text-sm text-[#637588]">Exclusive access to pristine sands and community pools.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary">sports_tennis</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest">Tennis &amp; Pickleball</p>
+<p class="text-sm text-[#637588]">Well-maintained courts just a 5-minute golf cart ride away.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary">hiking</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest">Jungle Trails</p>
+<p class="text-sm text-[#637588]">Miles of private trails for hiking and bird watching.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 11. Footer -->
+<footer class="bg-background-dark text-white py-20 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 border-b border-white/10 pb-16">
+<div class="space-y-6">
+<h3 class="serif-text text-3xl">Casa Cigüeña</h3>
+<p class="text-white/60 max-w-xs leading-relaxed">A sanctuary for the discerning traveler. Privately owned and managed with excellence in Nayarit.</p>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-xs">public</span></div>
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-xs">camera</span></div>
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-xs">mail</span></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="space-y-4">
+<p class="text-[10px] uppercase font-bold tracking-widest text-white/40">Inquiries</p>
+<ul class="text-sm space-y-2">
+<li class="hover:text-primary cursor-pointer transition-colors">bookings@casaciguena.mx</li>
+<li class="hover:text-primary cursor-pointer transition-colors">+52 322 123 4567</li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="text-[10px] uppercase font-bold tracking-widest text-white/40">Quick Links</p>
+<ul class="text-sm space-y-2">
+<li class="hover:text-primary cursor-pointer transition-colors">Guest Guide</li>
+<li class="hover:text-primary cursor-pointer transition-colors">The Location</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Reviews</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row justify-between text-[10px] uppercase tracking-widest text-white/30 font-bold">
+<p>© 2025 Casa Cigüeña. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<span>Privacy Policy</span>
+<span>Terms of Service</span>
+</div>
+</div>
+</footer>
+<!-- Bottom Nav (Mobile Only) -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t border-[#f0f2f4] flex justify-around p-3 z-50">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#637588]" href="#">
+<span class="material-symbols-outlined">image</span>
+<span class="text-[10px] font-bold">Gallery</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#637588]" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[10px] font-bold">Book</span>
+</a>
+</div>
+</body></html>
