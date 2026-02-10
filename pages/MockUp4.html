@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Cigüeña — Luxury Villa in Marina Chacala</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#197fe6",
+              "teak-dark": "#5A2F15",
+              "teak-light": "#7A5532",
+              sand: "#C7A87F",
+              "sand-light": "#EFECE4",
+              "sea-glass": "#62786E",
+              "background-light": "#EFECE4",
+              "background-dark": "#111921",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              "2xl": "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #efece4;
+        color: #5a2f15;
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+
+  <body class="bg-background-light text-teak-dark font-display">
+    <div class="min-h-screen">
+      <!-- Nav -->
+      <nav
+        class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur-xl rounded-full shadow-lg px-8 py-3 border border-[#8B7355]/10"
+      >
+        <div class="flex items-center gap-8">
+          <a
+            href="/"
+            class="text-[#8B7355] hover:text-[#6B5845] transition-colors flex items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-4 h-4"
+            >
+              <path d="m12 19-7-7 7-7"></path>
+              <path d="M19 12H5"></path>
+            </svg>
+            <span class="text-sm">Volver</span>
+          </a>
+
+          <span class="text-[#8B7355] tracking-wide">CASA CIGÜEÑA</span>
+
+          <a
+            href="#reservar"
+            class="text-sm text-[#7BA5A0] hover:text-[#6B9590] transition-colors"
+            >Reservar →</a
+          >
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section class="pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-5 flex flex-col justify-center py-12">
+              <div class="inline-block px-4 py-2 bg-[#7BA5A0]/10 rounded-full mb-6 w-fit">
+                <span class="text-sm text-[#7BA5A0] tracking-wide">LUJO FRENTE AL MAR</span>
+              </div>
+
+              <h1 class="text-6xl lg:text-7xl mb-6 text-[#8B7355] leading-tight">
+                A Private<br />
+                <span class="italic text-[#7BA5A0]">Oceanfront</span><br />
+                Sanctuary
+              </h1>
+
+              <p class="text-xl text-[#4A4A4A] mb-8 max-w-md">
+  Newly completed in 2025, Casa Cigüeña is a fully staffed oceanfront retreat in the gated community of Marina Chacala, Nayarit — with daily chef service and housekeeping.
+</p>
+
+              <div class="flex items-center gap-4">
+                <a
+                  href="#explorar"
+                  class="px-8 py-4 bg-[#8B7355] text-white rounded-full hover:bg-[#6B5845] transition-all inline-flex items-center gap-2"
+                >
+                  Explorar
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </a>
+
+                <div class="flex items-center gap-2 text-[#4A4A4A]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 text-[#7BA5A0]"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span class="text-sm">Marina Chacala, Nayarit</span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-12 lg:col-span-7 relative">
+              <div class="aspect-[4/3] rounded-3xl overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1766804627078-0b2250835ea8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiZWFjaCUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBvY2VhbiUyMHZpZXd8ZW58MXx8fHwxNzcwNjY2NzA0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Vista 1"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1615880480595-f5f9b4fb530e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiZWFjaCUyMGhvdXNlJTIwdGVycmFjZSUyMG9jZWFuJTIwc3Vuc2V0fGVufDF8fHx8MTc3MDY2Njc5OXww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Vista 2"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1729605412044-81f6acce4370?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwb29sJTIwb2NlYW4lMjB2aWV3fGVufDF8fHx8MTc3MDY2NjcwNXww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Vista 3"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0"
+                />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                  <button class="h-1.5 rounded-full transition-all w-8 bg-white"></button>
+                  <button class="h-1.5 rounded-full transition-all w-1.5 bg-white/50"></button>
+                  <button class="h-1.5 rounded-full transition-all w-1.5 bg-white/50"></button>
+                </div>
+              </div>
+
+              <div
+                class="absolute -bottom-6 left-6 right-6 bg-white rounded-2xl shadow-xl p-6 border border-[#8B7355]/5"
+              >
+                <div class="grid grid-cols-3 divide-x divide-[#8B7355]/10">
+                  <div class="text-center px-4">
+                    <div class="text-3xl text-[#8B7355] mb-1">7</div>
+<div class="text-sm text-[#4A4A4A]">Bedrooms</div>
+                  </div>
+                  <div class="text-center px-4">
+<div class="text-3xl text-[#8B7355] mb-1">7</div>
+<div class="text-sm text-[#4A4A4A]">Bathrooms</div>
+                  </div>
+                  <div class="text-center px-4">
+<div class="text-3xl text-[#8B7355] mb-1">14</div>
+<div class="text-sm text-[#4A4A4A]">Guests</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="explorar" class="py-24 bg-[#F5F3F0]">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-5xl mb-4 text-[#8B7355]">An Unforgettable Stay</h2>
+            <p class="text-xl text-[#4A4A4A]">What makes Casa Cigüeña exceptional</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition-shadow">
+              <div class="w-14 h-14 rounded-full bg-[#7BA5A0]/10 flex items-center justify-center mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-7 h-7 text-[#7BA5A0]"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl mb-3 text-[#8B7355]">Fully staffed</h3>
+              <p class="text-[#4A4A4A] leading-relaxed">
+                Daily chef service and housekeeping are included, so you can truly switch off and enjoy.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition-shadow">
+              <div class="w-14 h-14 rounded-full bg-[#7BA5A0]/10 flex items-center justify-center mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-7 h-7 text-[#7BA5A0]"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl mb-3 text-[#8B7355]">Sunsets & whales</h3>
+              <p class="text-[#4A4A4A] leading-relaxed">
+                Unobstructed Pacific views with sunsets year-round and whale watching from December to March.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition-shadow">
+              <div class="w-14 h-14 rounded-full bg-[#7BA5A0]/10 flex items-center justify-center mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-7 h-7 text-[#7BA5A0]"
+                >
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl mb-3 text-[#8B7355]">Beach club access</h3>
+              <p class="text-[#4A4A4A] leading-relaxed">
+                Enjoy Marina Chacala’s beach club, three pools, tennis (reservation recommended), pickleball, and private walking trails.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spaces -->
+      <section class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-5xl mb-16 text-[#8B7355]">Espacios Diseñados para ti</h2>
+
+          <div class="space-y-12">
+            <div class="grid grid-cols-12 gap-8 items-center">
+              <div class="col-span-12 md:col-span-7">
+                <div class="aspect-[16/10] rounded-3xl overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1640109478916-f445f8f19b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBiZWRyb29tJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MXx8fHwxNzcwNjY2NzA0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Suite Principal"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-5">
+                <div class="bg-[#F5F3F0] rounded-2xl p-8">
+                  <div class="text-6xl text-[#7BA5A0]/20 mb-4">01</div>
+                  <h3 class="text-3xl mb-4 text-[#8B7355]">Primary Suite</h3>
+                  <p class="text-lg text-[#4A4A4A]">King bed, sofa, ensuite bath with double vanity, ocean view.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-8 items-center">
+              <div class="col-span-12 md:col-span-7 md:col-start-6">
+                <div class="aspect-[16/10] rounded-3xl overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1600671012016-e5890d87f804?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tJTIwYmVhY2hmcm9udHxlbnwxfHx8fDE3NzA2NjY3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Sala de Estar"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-5 md:col-start-1 md:row-start-1">
+                <div class="bg-[#F5F3F0] rounded-2xl p-8">
+                  <div class="text-6xl text-[#7BA5A0]/20 mb-4">02</div>
+                  <h3 class="text-3xl mb-4 text-[#8B7355]">Living Areas</h3>
+                  <p class="text-lg text-[#4A4A4A]">Open, breezy spaces designed for gathering — indoor/outdoor flow with ocean views.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-8 items-center">
+              <div class="col-span-12 md:col-span-7">
+                <div class="aspect-[16/10] rounded-3xl overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBraXRjaGVuJTIwbW9kZXJufGVufDF8fHx8MTc3MDY0Njk0NHww&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Cocina Gourmet"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-5">
+                <div class="bg-[#F5F3F0] rounded-2xl p-8">
+                  <div class="text-6xl text-[#7BA5A0]/20 mb-4">03</div>
+                  <h3 class="text-3xl mb-4 text-[#8B7355]">Chef’s Kitchen & Dining</h3>
+                  <p class="text-lg text-[#4A4A4A]">
+                    A beautiful kitchen and dining space — daily chef service included.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking -->
+      <section id="reservar" class="py-24 bg-gradient-to-br from-[#8B7355] via-[#7BA5A0] to-[#6B9590]">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-5xl mb-4 text-white">Request Your Dates</h2>
+            <p class="text-xl text-white/90">
+              Send a booking request — we’ll confirm availability by email within 24 hours. No payment today.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm mb-2 text-[#8B7355]">Nombre Completo *</label>
+                  <input
+                    type="text"
+                    required
+                    class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors"
+                    placeholder="Tu nombre"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm mb-2 text-[#8B7355]">Email *</label>
+                  <input
+                    type="email"
+                    required
+                    class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors"
+                    placeholder="tu@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm mb-2 text-[#8B7355]">Teléfono *</label>
+                  <input
+                    type="tel"
+                    required
+                    class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors"
+                    placeholder="+52 123 456 7890"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm mb-2 text-[#8B7355]">Huéspedes *</label>
+                  <input
+                    type="number"
+                    required
+                    min="1"
+                    max="8"
+                    class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors"
+                    placeholder="1-8 personas"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm mb-2 text-[#8B7355]">Fecha de Llegada *</label>
+                  <input
+                    type="date"
+                    required
+                    class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm mb-2 text-[#8B7355]">Fecha de Salida *</label>
+                  <input
+                    type="date"
+                    required
+                    class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm mb-2 text-[#8B7355]">Mensaje o Peticiones Especiales</label>
+                <textarea
+                  rows="5"
+                  class="w-full px-4 py-4 bg-[#F5F3F0] border-2 border-transparent rounded-xl focus:outline-none focus:border-[#7BA5A0] transition-colors resize-none"
+                  placeholder="Cuéntanos sobre tu estancia perfecta..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-5 bg-[#8B7355] text-white rounded-xl hover:bg-[#6B5845] transition-colors text-lg flex items-center justify-center gap-2 group"
+              >
+                Enviar Solicitud
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-[#2A2A2A] text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+              <h4 class="text-2xl mb-4">Casa Vista al Mar</h4>
+              <p class="text-white/70">Un refugio de lujo en el corazón de la Riviera Maya</p>
+            </div>
+
+            <div>
+              <h5 class="text-lg mb-4">Contacto</h5>
+              <div class="space-y-2 text-white/70">
+                <p class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-4 h-4"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  info@casavistaalmar.com
+                </p>
+
+                <p class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  +52 123 456 7890
+                </p>
+
+                <p class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Playa del Carmen, México
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="text-lg mb-4">Horario de Atención</h5>
+              <div class="space-y-2 text-white/70">
+                <p>Lunes - Viernes: 9:00 - 18:00</p>
+                <p>Sábado: 10:00 - 16:00</p>
+                <p>Domingo: Cerrado</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
+            <p>© 2026 Casa Vista al Mar. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -9,47 +9,66 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#197fe6", // Ocean sky blue variant
-                        "teak-dark": "#5A2F15",
-                        "teak-light": "#7A5532",
-                        "sand": "#C7A87F",
-                        "sand-light": "#EFECE4",
-                        "sea-glass": "#62786E",
-                        "background-light": "#EFECE4",
-                        "background-dark": "#111921",
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          /* Base */
+          "background-light": "#F3EFE6",   // arena cálida
+          "background-dark": "#0F1412",    // oscuro orgánico
+          "ink": "#1F2320",                // texto principal
+
+          /* Neutros (arena / madera) */
+          "sand": "#D7C3A6",
+          "sand-2": "#EEE4D6",
+          "teak-dark": "#4B2A17",
+          "teak": "#6B3F22",
+          "teak-light": "#8A5B3A",
+
+          /* Acentos naturales */
+          "sage": "#4E6A5A",               // CTA principal
+          "sage-2": "#AFC3B5",             // fondo suave
+          "ocean": "#86A9C4",              // acento secundario (muy leve)
+          "ocean-2": "#D7E6F1",
+
+          /* Alias */
+          "primary": "#4E6A5A",
+          "accent": "#6B3F22",
+        },
+        fontFamily: {
+          "display": ["Plus Jakarta Sans", "sans-serif"],
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem",
+          lg: "0.5rem",
+          xl: "0.75rem",
+          "2xl": "1rem",
+          full: "9999px",
+        },
+      },
+    },
+  };
+</script>
+
 <style>
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #EFECE4;
-            color: #5A2F15;
+          background-color: #F3EFE6;
+          color: #1F2320;
         }
         .hero-gradient {
-            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+          background: linear-gradient(
+            180deg,
+            rgba(15, 20, 18, 0.10) 0%,
+            rgba(15, 20, 18, 0.55) 70%,
+            rgba(15, 20, 18, 0.70) 100%
+          );
         }
+
         .glass-nav {
-            background: rgba(239, 236, 228, 0.8);
-            backdrop-filter: blur(12px);
-        }
+          background: rgba(243, 239, 230, 0.82);
+          backdrop-filter: blur(14px);
+        } 
     </style>
 <style>
     body {
@@ -59,14 +78,22 @@
   </head>
 <body class="bg-background-light text-teak-dark font-display">
 <!-- Sticky Navigation -->
-<nav class="sticky top-0 z-50 glass-nav border-b border-sand/20 px-4 py-4 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-sea-glass">villa</span>
-<h2 class="text-teak-dark text-xl font-extrabold tracking-tight uppercase">Casa Cigüeña</h2>
+<nav class="sticky top-0 z-50 glass-nav border-b border-sand/30 px-4 py-4 flex items-center justify-between">
+
+<div class="flex items-center gap-3">
+  <img
+    src="../resources/logo2.jpeg"
+    alt="Casa Cigüeña"
+    class="h-10 w-10 rounded-full object-contain bg-sand-2 p-1 border border-black/10 shadow-sm"
+  />
+  <h2 class="text-ink text-xl font-extrabold tracking-tight uppercase">Casa Cigüeña</h2>
 </div>
-<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-bold transition-all">
-            Check Availability
-        </button>
+
+<button class="bg-primary text-white px-5 py-2 rounded-full text-sm font-bold transition-all
+  hover:bg-primary/90 shadow-sm shadow-black/10 border border-black/10">
+  Check Availability
+</button>
+
 </nav>
 <!-- Hero Section -->
 <section class="relative h-[90vh] w-full flex items-center justify-center overflow-hidden">
@@ -79,9 +106,11 @@
 <p class="text-white/90 text-lg md:text-xl font-medium mb-8">
                 7 Bedrooms • Sleeps 14 • Daily Chef &amp; Housekeeping
             </p>
-<button class="bg-white text-teak-dark hover:bg-sand-light px-10 py-4 rounded-xl text-lg font-bold shadow-xl transition-all">
-                Request to Book
-            </button>
+<button class="bg-teak text-white hover:bg-teak/90 px-10 py-4 rounded-xl text-lg font-bold shadow-xl transition-all
+  border border-black/10">
+  Request to Book
+</button>
+
 </div>
 </section>
 <!-- About Section -->
@@ -178,7 +207,7 @@
 <h2 class="text-3xl font-extrabold mb-16 text-center">World-Class Amenities</h2>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
 <div class="flex flex-col items-center text-center gap-4">
-<span class="material-symbols-outlined text-4xl text-primary">wifi</span>
+<span class="material-symbols-outlined text-4xl text-sand">wifi</span>
 <h4 class="font-bold">Fiber Wi-Fi</h4>
 <p class="text-white/60 text-sm">High-speed connectivity across the entire property</p>
 </div>
